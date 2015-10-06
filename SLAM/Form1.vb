@@ -126,7 +126,6 @@ Public Class Form1
 
     Private Sub WavWorker_RunWorkerCompleted(sender As Object, e As System.ComponentModel.RunWorkerCompletedEventArgs) Handles WavWorker.RunWorkerCompleted
         ProgressBar1.Value = 0
-        Dim MsgBoxText As String = "Conversion complete!"
         Dim FailedFiles As New List(Of String)
 
         For Each FilePath In e.Result
